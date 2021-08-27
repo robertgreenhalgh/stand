@@ -193,7 +193,7 @@ def blast_to_dict(args, db_fasta_dict, taxa_set):
                     blast_dict[seq_id] = vals + [taxa_score, set([seq_hit])]
                 elif taxa_score > blast_dict[seq_id][3]:
                     blast_dict[seq_id] = vals + [taxa_score, set([seq_hit])]
-                else:
+                elif taxa_score == blast_dict[seq_id][3]:
                     blast_dict[seq_id][4].add(seq_hit)
     return blast_dict
 

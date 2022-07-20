@@ -7,11 +7,17 @@ This repository contains a handful of scripts designed to assist in assigning ta
 POSIX-compliant operating system\
 Python 3.X\
 Biopython 1.7X\
-NCBI Entrez Programming Utilities (E-Utilities)\
+NCBI Entrez Programming Utilities (E-Utilities) 13.X (the scripts are currently incompatible with versions 15.X and 16.X)\
 Cutadapt 2.X\
 NCBI BLAST+ 2.X
 
 More detailed documentation can be provided by running each script with the -h or --help arguments. What follows is a brief tutorial on assigning taxonomy to sequences generated using the *trn*L *g* and *h* primers.
+
+## Setting up a Conda environment
+
+For those that use Conda and have the Bioconda channel configured, the following command will create an environment named stand with all pipeline dependencies installed:
+
+`conda create -n stand python biopython perl perl-net-ssleay entrez-direct=13.9 cutadapt blast`
 
 ## Downloading sequences and taxonomy from the NCBI database
 

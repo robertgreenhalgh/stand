@@ -82,9 +82,10 @@ def parse_args():
     )
     parser.add_argument(
         '--length', nargs='?', default=0.9, type=arg_perc,
-        help='When considering a sequence and a hit, the shorter of these two '
-             'sequences must be at least this percent the length of the '
-             'longer sequence. (Optional, default 90)'
+        help='When considering the length of a database sequence and the '
+             'alignment length reported for a BLAST hit, the smaller of these '
+             'two values must be at least this percentage of the larger '
+             'value. (Optional, default 90)'
     )
     parser.add_argument(
         '--identity', nargs='?', default=0.9, type=arg_perc,

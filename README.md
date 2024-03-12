@@ -17,7 +17,7 @@ More detailed documentation can be provided by running each script with the -h o
 
 For those that use Conda and have the Bioconda channel configured, the following command will create an environment named stand with all pipeline dependencies installed:
 
-`conda create -n stand python biopython perl perl-net-ssleay entrez-direct=13.9 cutadapt blast`
+`conda create -n stand --no-channel-priority python biopython perl perl-net-ssleay entrez-direct=13.9 cutadapt blast`
 
 ## Downloading sequences and taxonomy from the NCBI database
 
